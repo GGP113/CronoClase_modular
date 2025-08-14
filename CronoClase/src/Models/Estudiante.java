@@ -90,7 +90,10 @@ public class Estudiante {
 
     public void VisualizarMaterias(){
 
-        System.out.print(this.materias);
+        for(Materia m: this.materias){
+
+            System.out.println(m);
+        }
 
 
     }

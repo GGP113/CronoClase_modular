@@ -34,20 +34,43 @@ public class App {
 
         ArrayList<Momento> momentosS1 = new ArrayList<>(List.of(M1, M2, M3));
 
-        Materia metodologia1 = new Materia("Metodolodigia", P1, semestre, h1, momentosS1);
+        Materia metodologia1 = new Materia("Metodolodgia", P1, semestre, h1, momentosS1);
+        Materia HTML_CSS = new Materia("HTML+CSS", P2, semestre, h3, momentosS1);
 
-        Scanner sc = new Scanner(System.in);
+        
 
-       ArrayList<Materia> materiasE1 = new ArrayList<>(List.of(metodologia1));
+       ArrayList<Materia> materiasE1 = new ArrayList<>(List.of(metodologia1, HTML_CSS));
 
 
         Estudiante E1 = new Estudiante("1152717970","Paula", "Gil", "cualquier@gmail.com", Programa,materiasE1 );
 
 
+        
+
+        E1.VisualizarMaterias();
+        System.out.println("**********************************************************************************");
+        P1.AsignarActividades(metodologia1);
+        System.out.println("**********************************************************************************");
+        E1.VisualizarMaterias();
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         
         /***********************************************************************************************************************/
-
+/* 
         System.out.print("Cuantas actividades desea ingresar: ");
         int numActividades = sc.nextInt();
         sc.nextLine();
@@ -81,7 +104,7 @@ public class App {
         materiaElegida.getMomentos().get(momentoElegido).setListaActividades(actividadesNuevas.getListaAactividades());
 
 
-        E1.VisualizarMaterias();
+        E1.VisualizarMaterias();*/
 
 
     }

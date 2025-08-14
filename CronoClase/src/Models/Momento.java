@@ -10,18 +10,14 @@ public class Momento {
     private String name;
 
     private ArrayList<Actividades> listaActividades;
-    
+
     private LocalDate date;
-
-
 
     public Momento(String name, ArrayList<Actividades> listaActividades, LocalDate date) {
         this.name = name;
         this.listaActividades = new ArrayList<Actividades>(listaActividades);
         this.date = date;
     }
-
-
 
     public String getName() {
         return this.name;
@@ -47,24 +43,30 @@ public class Momento {
         this.date = date;
     }
 
+    public String toString() {
 
+        System.out.println("\t " + this.name);
+        //System.out.println("\n");
+        System.out.println("\t \t Actividades asignadas: ");
 
+        if (this.listaActividades.size() == 0) {
 
+            System.out.println("\t \t Sin Actividades");
+        }
 
-    
+        else {
 
-    
+            for (int i = 0; i < this.listaActividades.size(); i++) {
+                
+                System.out.println("\t \t"+this.listaActividades.get(i));
+                System.out.println("\n");
+            }
+        }
 
+        System.out.println("\t \t El momento " + this.name + " finaliza el " + this.date);
 
+        return "";
 
-    
+    }
 
-
-
-
-
-    
-
-    
-    
 }

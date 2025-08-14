@@ -35,6 +35,20 @@ public class crearActividad {
         
     }
 
+    public String toString() {
+        
+        for(int i=0; i< this.listaAactividades.size(); i++){
+
+            System.out.println(this.listaAactividades.get(i));
+            System.out.println("\n");
+
+            
+            }
+
+        return "";
+        
+    }
+
     
 
 

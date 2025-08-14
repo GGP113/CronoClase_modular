@@ -82,7 +82,19 @@ public class Materia {
 
         //COMPLETAR AQUI
 
-            return "Holiii";
+        System.out.println("Materia: " + this.name);
+        System.out.println("Docente: " + this.profesor.getName());
+        System.out.println("Horario: " + this.horario);
+        System.out.println("Momentos: " );
+        
+        for(Momento m: this.momentos){
+
+            System.out.println(m);
+
+
+        }
+
+            return "";
         }
 
 

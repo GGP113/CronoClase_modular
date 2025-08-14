@@ -55,6 +55,14 @@ public class Actividades {
     }
 
 
+    public String toString() {
+        return "Nombre de la actividad: "+this.titulo + "\n"
+        + "\t \t Fecha de entrega: " + this.fechaEntrega + "\n"
+        + "\t \t Estado: " + this.estado + "\n"
+        + "\t \t Materia: " + this.materia.getName() + "\n";
+    }
+
+
 
     
 }
