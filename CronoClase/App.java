@@ -37,9 +37,11 @@ public class App {
         Momento M3 = new Momento("Momento 3", new ArrayList<Actividades>(), LocalDate.parse("2025-10-11"));
 
         ArrayList<Momento> momentosS1 = new ArrayList<>(List.of(M1, M2, M3));
+        ArrayList<Momento> momentosS1_2 = new ArrayList<>(List.of(new Momento(M1), new Momento(M2), new Momento(M3)   ));
+        
 
         Materia metodologia1 = new Materia("Metodolodgia", P1, semestre, h1, momentosS1);
-        Materia HTML_CSS = new Materia("HTML+CSS", P2, semestre, h3, momentosS1);
+        Materia HTML_CSS = new Materia("HTML+CSS", P2, semestre, h3, momentosS1_2);
 
         
 
