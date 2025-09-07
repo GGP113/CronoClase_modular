@@ -4,8 +4,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import Models.*;
-import UseCases.*;
+import createActivities.Models.*;
+import createActivities.UseCases.*;
+
 
 import java.util.Scanner;
 
