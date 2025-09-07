@@ -5,7 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import createActivities.Models.*;
+
 import createActivities.UseCases.*;
+
+import Models.*;
 
 
 import java.util.Scanner;

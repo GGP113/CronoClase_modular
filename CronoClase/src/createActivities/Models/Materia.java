@@ -1,10 +1,9 @@
 package createActivities.Models;
 
-import Models.Profesor;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import Models.Momento;
+import createActivities.Models.*;
 
 public class Materia {
 

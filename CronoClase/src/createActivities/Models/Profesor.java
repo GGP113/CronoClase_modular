@@ -70,6 +70,7 @@ public class Profesor {
         int momentoElegido = sc.nextInt();
         sc.nextLine();
         Momento momentoSeleccionado = materiaElegida.getMomentos().get(momentoElegido - 1);
+        
 
         crearActividad actividadesNuevas = new crearActividad();
 

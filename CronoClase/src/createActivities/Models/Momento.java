@@ -3,7 +3,7 @@ package createActivities.Models;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import Models.Actividades;
+import createActivities.Models.*;
 
 public class Momento {
 
@@ -18,6 +18,16 @@ public class Momento {
         this.listaActividades = new ArrayList<Actividades>(listaActividades);
         this.date = date;
     }
+
+    public Momento( Momento src){
+
+        this.name=src.name;
+        this.listaActividades = new ArrayList<Actividades>(src.listaActividades);
+        this.date=src.date;
+    }
+
+
+
 
     public String getName() {
         return this.name;

@@ -1,10 +1,14 @@
 package Models;
+
+
+
 import java.util.ArrayList;
-import Models.Materia;
+
+import createActivities.Models.Materia;
 
 public class Estudiante {
 
-    private String id;
+     private String id;
     private String nombre;
     private String apellido;
     private String correo;
@@ -97,7 +101,5 @@ public class Estudiante {
 
 
     }
-
-
 
 }
